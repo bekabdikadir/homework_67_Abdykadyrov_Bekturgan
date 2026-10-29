@@ -1,0 +1,8 @@
+@model WebApplication3.Models.TestPageViewModel
+@{
+    ViewData["Title"] = "Test Page";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Страница: @Model.Page</p>
+<a asp-action="TestPage" asp-route-page="@ViewBag.PageIncrement">Следующая страница</a>

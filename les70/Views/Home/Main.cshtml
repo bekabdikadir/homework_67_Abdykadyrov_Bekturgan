@@ -1,0 +1,9 @@
+@model WebApplication3.IndexViewModel
+@{
+    ViewData["Title"] = Model.PageTitle;
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.PageTitle</h1>
+    <p>@ViewData["Message"]</p>
+</div>
